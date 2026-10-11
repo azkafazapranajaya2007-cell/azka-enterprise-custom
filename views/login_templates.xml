@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="custom_login_layout" inherit_id="web.login_layout">
+        <!-- Ganti Logo / Branding di Halaman Login -->
+        <xpath expr="//div[hasclass('card-body')]" position="before">
+            <div class="text-center mb-4 mt-2">
+                <h2 style="color: #1e1b4b; font-weight: 800; letter-spacing: -0.5px;">Azka Enterprise</h2>
+                <p class="text-muted" style="font-size: 0.9rem;">Management &amp; Automation Platform</p>
+            </div>
+        </xpath>
+        
+        <!-- Sembunyikan Footer Branding bawaan -->
+        <xpath expr="//div[hasclass('text-center')]" position="replace">
+            <div class="text-center small mt-3 text-muted">
+                &amp;copy; 2026 Azka Enterprise Platform. All rights reserved.
+            </div>
+        </xpath>
+    </template>
+</odoo>

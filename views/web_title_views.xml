@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Custom Page Title & System Layout -->
+    <template id="custom_web_title" inherit_id="web.layout">
+        <xpath expr="//title" position="replace">
+            <title>Azka Enterprise Platform | Management Suite</title>
+        </xpath>
+    </template>
+</odoo>
